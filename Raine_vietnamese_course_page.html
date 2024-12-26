@@ -1,0 +1,156 @@
+# Updating the HTML structure to reflect Vietnamese course details and Rainie's information
+
+html_code_vietnamese = """
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越南语全能课程</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fdf5eb;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #1e3a5f;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 10px 0;
+            line-height: 1.8;
+            font-size: 1em;
+        }
+        .image-placeholder {
+            background-color: #e0e0e0;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+            color: #666;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .button-group button {
+            background-color: #1e3a5f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .button-group button:hover {
+            background-color: #162d46;
+        }
+        .footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>越南语全能课程</h1>
+            <p>适用：零基础学习者、越南语爱好者</p>
+        </div>
+        
+        <div class="section">
+            <h2>课程概述</h2>
+            <p>课程一：越南语发音与基础入门</p>
+            <p>课程二：日常生活会话训练</p>
+            <p>课程三：高效词汇记忆法</p>
+            <p>课程四：实用句型与流利表达</p>
+        </div>
+        
+        <div class="section">
+            <h2>老师简介</h2>
+            <div class="image-placeholder">上传Rainie老师照片</div>
+            <p>Rainie 老师 | 越南语教学达人</p>
+            <p>YouTube频道超10万订阅者</p>
+            <p>多年越南语教学经验，致力于为学生提供最有效的学习方法</p>
+        </div>
+        
+        <div class="section">
+            <h2>适用人群</h2>
+            <div class="grid">
+                <p>对越南语感兴趣，却不知道从哪里开始？</p>
+                <p>想快速掌握日常会话与基本句型？</p>
+                <p>学习越南语遇到发音与记忆的难题？</p>
+                <p>本课程帮助您轻松入门，快速进步！</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>课程大纲</h2>
+            <p>1. 标准越南语发音规则及语调训练</p>
+            <p>2. 日常高频词汇及场景会话</p>
+            <p>3. 实用句型与语法快速掌握</p>
+        </div>
+        
+        <div class="section button-group">
+            <button>零基础适用</button>
+            <button>日常会话</button>
+            <button>高效记忆</button>
+            <button>深入学习</button>
+        </div>
+        
+        <div class="footer">
+            <p>© 2024 越南语全能课程</p>
+        </div>
+    </div>
+</body>
+</html>
+"""
+
+# Save the updated Vietnamese course HTML file
+file_path_vietnamese = "/mnt/data/vietnamese_course_page.html"
+with open(file_path_vietnamese, "w") as file:
+    file.write(html_code_vietnamese)
+
+file_path_vietnamese
