@@ -1,12 +1,12 @@
-# Updating the HTML structure to reflect Vietnamese course details and Rainie's information
+# Constructing a fully detailed HTML and CSS structure to replicate the design exactly
 
-html_code_vietnamese = """
+html_code_full = """
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>越南语全能课程</title>
+    <title>全能英语四合一</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -96,61 +96,60 @@ html_code_vietnamese = """
 <body>
     <div class="container">
         <div class="header">
-            <h1>越南语全能课程</h1>
-            <p>适用：零基础学习者、越南语爱好者</p>
+            <h1>全能英语四合一</h1>
+            <p>适用：家长、成人、零基础</p>
         </div>
         
         <div class="section">
             <h2>课程概述</h2>
-            <p>课程一：越南语发音与基础入门</p>
-            <p>课程二：日常生活会话训练</p>
-            <p>课程三：高效词汇记忆法</p>
-            <p>课程四：实用句型与流利表达</p>
+            <p>课程一：零基础入门</p>
+            <p>课程二：自然拼读</p>
+            <p>课程三：速记单词</p>
+            <p>课程四：流利口语进阶 - 万能句型</p>
         </div>
         
         <div class="section">
             <h2>老师简介</h2>
-            <div class="image-placeholder">上传Rainie老师照片</div>
-            <p>Rainie 老师 | 越南语教学达人</p>
-            <p>YouTube频道超10万订阅者</p>
-            <p>多年越南语教学经验，致力于为学生提供最有效的学习方法</p>
+            <div class="image-placeholder">上传您的照片</div>
+            <p>英国人 | 剑桥安鲁大学毕业</p>
+            <p>全网300W粉丝 | 带过上万名学生</p>
         </div>
         
         <div class="section">
             <h2>适用人群</h2>
             <div class="grid">
-                <p>对越南语感兴趣，却不知道从哪里开始？</p>
-                <p>想快速掌握日常会话与基本句型？</p>
-                <p>学习越南语遇到发音与记忆的难题？</p>
-                <p>本课程帮助您轻松入门，快速进步！</p>
+                <p>想学英语却不知道从哪里开始？</p>
+                <p>见词不会读？拼写复杂单词，常常记不住？</p>
+                <p>想提升发音精准度和流利度？</p>
+                <p>本课程为您提供最贴心的学习体验！</p>
             </div>
         </div>
         
         <div class="section">
             <h2>课程大纲</h2>
-            <p>1. 标准越南语发音规则及语调训练</p>
-            <p>2. 日常高频词汇及场景会话</p>
-            <p>3. 实用句型与语法快速掌握</p>
+            <p>1. 零基础入门课程：26个字母与自然拼读</p>
+            <p>2. 单词速记法：快速提升单词量</p>
+            <p>3. 流利英语口语：万能句型及应用</p>
         </div>
         
         <div class="section button-group">
-            <button>零基础适用</button>
-            <button>日常会话</button>
-            <button>高效记忆</button>
-            <button>深入学习</button>
+            <button>家庭使用</button>
+            <button>零基础</button>
+            <button>高效学习</button>
+            <button>英语启蒙</button>
         </div>
         
         <div class="footer">
-            <p>© 2024 越南语全能课程</p>
+            <p>© 2024 全能英语课程</p>
         </div>
     </div>
 </body>
 </html>
 """
 
-# Save the updated Vietnamese course HTML file
-file_path_vietnamese = "/mnt/data/vietnamese_course_page.html"
-with open(file_path_vietnamese, "w") as file:
-    file.write(html_code_vietnamese)
+# Save the detailed HTML file
+file_path_full = "/mnt/data/full_detailed_english_page.html"
+with open(file_path_full, "w") as file:
+    file.write(html_code_full)
 
-file_path_vietnamese
+file_path_full
