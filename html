@@ -1,129 +1,42 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainie老师の越南语课堂</title>
-    
-    <!-- 手机端优化设置 -->
-    <meta name="theme-color" content="#6d28d9">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇻🇳</text></svg>">
-    
     <style>
-        /* 基础样式 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            background: linear-gradient(135deg, rgba(109,40,217,0.8), rgba(16,185,129,0.8)),
-                        url('https://i.imgur.com/ABC123.webp'); /* 背景图 */
-            background-size: cover;
-            background-attachment: fixed;
-            min-height: 100vh;
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
+            background: linear-gradient(135deg, #6d28d9, #10b981);
+            font-family: Arial, sans-serif;
             padding: 20px;
-            color: #2d3748;
+            color: white;
         }
-
-        /* 内容容器 */
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: rgba(255,255,255,0.97);
-            padding: 2rem;
+        .card {
+            background: rgba(255,255,255,0.95);
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            backdrop-filter: blur(5px);
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            color: #333;
         }
-
-        /* 标题样式 */
-        h1 {
-            color: #6d28d9;
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #10b981;
-        }
-
-        /* 课程特色区块 */
-        .features {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .feature-item {
-            padding: 1.5rem;
-            background: #f7fafc;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateY(-3px);
-        }
-
-        /* 二维码区域 */
-        .qrcode-section {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
         .qrcode {
-            width: 200px;
-            border: 3px solid #6d28d9;
-            border-radius: 12px;
-            padding: 5px;
-            background: white;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 600px) {
-            .container {
-                padding: 1.5rem;
-                margin: 1rem;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
+            width: 180px;
+            display: block;
+            margin: 20px auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🇻🇳 Rainie老师的越南语教室</h1>
-
-        <!-- 联系方式 -->
-        <div class="qrcode-section">
-            <p style="color: #4a5568; margin-bottom: 1rem;">扫码添加老师微信 👇</p>
-            <img src="YOUR_WECHAT_QRCODE_LINK" 
-                 class="qrcode" 
-                 alt="微信二维码">
-        </div>
-
-        <!-- 课程特色 -->
-        <div class="features">
-            <div class="feature-item">
-                <h3>🎯 课程亮点</h3>
-                <ul style="list-style: none;">
-                    <li>✅ 零基础语音强化训练</li>
-                    <li>✅ 商务场景实战对话</li>
-                    <li>✅ 文化习俗深度解析</li>
-                </ul>
-            </div>
-
-            <div class="feature-item">
-                <h3>📆 上课时间</h3>
-                <p>⏰ 周一至周五 9:00-21:00<br>
-                   🕒 周末弹性预约</p>
-            </div>
-        </div>
+    <div class="card">
+        <h1>🇻🇳 越南语在线课堂</h1>
+        <p>微信扫码立即咨询 👇</p>
+        <img src="https://i.imgur.com/替换你的二维码ID.png" class="qrcode">
+        
+        <h3>课程特色</h3>
+        <ul>
+            <li>✅ 零基础语音训练</li>
+            <li>✅ 商务场景实战</li>
+            <li>✅ 微信实时答疑</li>
+        </ul>
     </div>
 </body>
 </html>
